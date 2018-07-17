@@ -11,14 +11,14 @@
         android:id="@+id/layout_title"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@color/colorPrimary">
+        android:background="#393A3F">
 
         <Button
             android:id="@+id/btn_select"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
-            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:background="#393A3F"
             android:onClick="choose"
             android:text="选择图片"
             android:textColor="#FFFFFF" />
@@ -28,7 +28,7 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:layout_marginRight="5dp"
-            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:background="#393A3F"
             android:onClick="save"
             android:text="导出切片"
             android:textColor="#FFFFFF" />
