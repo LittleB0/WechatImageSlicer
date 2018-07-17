@@ -357,7 +357,11 @@ public class MainActivity extends Activity {
                             intent.setType("image/*");
                             intent.putExtra("Kdescription", "");
                             intent.putExtra(Intent.EXTRA_STREAM, sliceUris);
-                            startActivity(intent);
+                            try {
+                                startActivity(intent);
+                            } catch (ActivityNotFoundException e) {
+                                Toast.makeText(getApplicationContext(), "未安装微信,请安装微信后继续操作", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     });
 
